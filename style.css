@@ -1,0 +1,443 @@
+body {
+     background-image: url("tree.jpg");
+  background-repeat: repeat;
+    background-size: cover;
+    margin: 0;
+    
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+  position: sticky;
+    top: 0;
+}
+
+.navbar ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  background-color: #111111;
+}
+.clearfix {
+  border: 3px solid green;
+  padding: 10px;
+  position: fixed;
+  color: rgb(244, 248, 4);
+  width: 100px;
+  height: 60px;
+  background: rgb(192, 155, 155);
+  right: 0;
+  bottom: 30px;
+  border-radius: 10px;
+}
+.img2 {
+  float: right;
+  width: 30%;
+  height: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 50px;
+  word-break: break-all;
+    color:greenyellow;
+    text-align: center;
+}
+p {
+  font-size: 20px;
+  word-break: break-all;
+    color: brown;
+    text-align: center;
+}
+#services p {
+    font-size: 20px;
+    word-break: break-all;
+      color: rgb(114, 180, 149);
+      text-align: center;
+  }
+  
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.logo {
+  color: white;
+  font-size: 20px;
+  padding: 14px 16px;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: white;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar ul.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .navbar ul.nav-links.active {
+    display: flex;
+  }
+
+  .navbar ul.nav-links li {
+    text-align: center;
+    border-top: 1px solid #444;
+  }
+}
+/* Navbar base fix */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  padding: 14px 16px;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    border-top: 1px solid #444;
+  }
+}
+
+/* Fix clearfix box */
+.clearfix {
+  border: 3px solid green;
+  padding: 10px;
+  color: rgb(244, 248, 4);
+  width: 160px;
+  height: auto;
+  background: rgb(192, 155, 155);
+  right: 10px;
+  bottom: 30px;
+  border-radius: 10px;
+  position: fixed;
+  text-align: center;
+}
+
+.clearfix p {
+  margin: 5px 0 0;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Grid fix for 4 cards per row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1 1 calc(25% - 16px);
+  margin: 8px;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    flex: 1 1 calc(50% - 16px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 1 1 100%;
+  }
+}
+/* About Section Fix */
+  /* Contacts Section */
+        #contacts {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8c8dc, #e2b0d9);
+            color: #fff;
+        }
+
+        .contacts-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-info h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .contact-details {
+            margin-top: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 20px;
+        }
+
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h3 {
+            color: #a64d79;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #a64d79;
+            color: #fff;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #8c3c66;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-column h4 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #f8c8dc;
+        }
+
+        .footer-column p {
+            margin-bottom: 15px;
+            color: #ccc;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #f8c8dc;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: #fff;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #a64d79;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .section-title h2 {
+                font-size: 28px;
+            }
+
+            .about-text h3 {
+                font-size: 24px;
+            }
+        }
